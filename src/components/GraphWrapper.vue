@@ -55,8 +55,8 @@ var editor;
 
 // CustomUserObject
 window.CustomUserObject = function(name, type) {
-  this.name = name || "New Name";
-  this.type = type || "New Type";
+  this.name = name || "Имя";
+  this.type = type || "Тип";
   this.clone = function() {
     return mxUtils.clone(this);
   };
@@ -128,7 +128,7 @@ export default {
       wrapper.style.justifyContent = "center";
       wrapper.style.border = "2px dashed crimson";
       wrapper.innerHTML =
-        '<div>Custom User Object</div><div style="color: #8C8C8C">Drag me to scheme!</div>';
+        '<div>Тестовый обьект</div><div style="color: #8C8C8C">Перетащите на сетку!</div>';
       sidebar.appendChild(wrapper);
 
       // Creates the image which is used as the drag icon (preview)
@@ -140,7 +140,7 @@ export default {
       // Checks if the browser is supported
       if (!mxClient.isBrowserSupported()) {
         // Displays an error message if the browser is not supported.
-        mxUtils.error("Browser is not supported!", 200, false);
+        mxUtils.error("Браузер не поддерживается!", 200, false);
       } else {
         mxConnectionHandler.prototype.connectImage = new mxImage(
           require("../assets/handle-connect.png"),
