@@ -16,8 +16,8 @@
           >
         </div>
       </div>
-      <!-- <div style="display: block;padding-top: 5px; align-items: baseline">
-        <div style="width: 150px; color: white">Коментарий:</div>
+      <div style="display: block;padding-top: 5px; align-items: baseline">
+        <!-- <div style="width: 150px; color: white">Коментарий:</div>
         <div style="flex: auto">
           <input
             @focus="$event.target.select()"
@@ -25,8 +25,8 @@
             @input="debounce_change"
             v-model="cellData.value.type"
           >
-        </div>
-      </div>-->
+        </div>-->
+      </div>
     </div>
     <div style="text-align: center; color: white; padding-top: 5px" v-else>Обьект не выбран</div>
     <hr>
