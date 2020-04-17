@@ -10,6 +10,7 @@
   "dependencies": {
     "@vue/cli-plugin-babel": "4.1.1",
     "mxgraph": "4.1.0",
+    "start": "^5.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
