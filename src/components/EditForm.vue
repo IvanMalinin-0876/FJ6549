@@ -28,7 +28,7 @@
         </div>
       </div>-->
     </div>
-    <div style="text-align: center; color: white; padding-top: 5px" v-else>No object selected</div>
+    <div style="text-align: center; color: white; padding-top: 5px" v-else>Обьект не выбран</div>
     <hr>
   </div>
 </template>
