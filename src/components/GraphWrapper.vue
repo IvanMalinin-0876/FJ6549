@@ -15,8 +15,8 @@ import EditForm from "./EditForm";
 const graphConfig = {
   mxBasePath: "/mx/", //Specifies the path in mxClient.basePath.
   mxImageBasePath: "/mx/images", // Specifies the path in mxClient.imageBasePath.
-  mxLanguage: "en", // Specifies the language for resources in mxClient.language.
-  mxDefaultLanguage: "en", // Specifies the default language in mxClient.defaultLanguage.
+  mxLanguage: "ru", // Specifies the language for resources in mxClient.language.
+  mxDefaultLanguage: "ru", // Specifies the default language in mxClient.defaultLanguage.
   mxLoadResources: false, // Specifies if any resources should be loaded.  Default is true.
   mxLoadStylesheets: false // Specifies if any stylesheets should be loaded.  Default is true
 };
@@ -55,8 +55,9 @@ var editor;
 
 // CustomUserObject
 window.CustomUserObject = function(name, type) {
-  this.name = name || "Имя";
-  this.type = type || "Тип";
+  this.name = name || "Название";
+  this.type = type || "Коментарий";
+
   this.clone = function() {
     return mxUtils.clone(this);
   };
@@ -228,11 +229,11 @@ export default {
               mxUtils.htmlEntities(cell.value.name, false) +
               "</strong>" +
               "</div>";
-            label +=
-              '<div style="width: 100px;margin-right: 10px"><strong style="opacity: 0.7">' +
-              mxUtils.htmlEntities(` \t ${cell.value.type}`, false) +
-              "</strong></div>";
-            label += "</div>";
+            // label +=
+            //   '<div style="width: 100px;margin-right: 10px"><strong style="opacity: 0.7">' +
+            //   mxUtils.htmlEntities(` \t ${cell.value.type}`, false) +
+            // ("</strong></div>");
+            // label += "</div>";
 
             return label;
           }
