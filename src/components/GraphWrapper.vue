@@ -13,21 +13,12 @@ import EditForm from "./EditForm";
 
 // если планируется использовать встроенные интерфейсы то нужно указать пути к ресурсам
 const graphConfig = {
-<<<<<<< Updated upstream
-  mxBasePath: "/mx/", //Specifies the path in mxClient.basePath.
-  mxImageBasePath: "/mx/images", // Specifies the path in mxClient.imageBasePath.
-  mxLanguage: "ru", // Specifies the language for resources in mxClient.language.
-  mxDefaultLanguage: "ru", // Specifies the default language in mxClient.defaultLanguage.
-  mxLoadResources: false, // Specifies if any resources should be loaded.  Default is true.
-  mxLoadStylesheets: false // Specifies if any stylesheets should be loaded.  Default is true
-=======
   mxBasePath: "/mx/", //Указывает путь в mxClient.basePath.
   mxImageBasePath: "/mx/images", //Указывает путь в mxClient.imageBasePath.
   mxLanguage: "en", //Задает язык для ресурсов в mxClient.language.
   mxDefaultLanguage: "en", // Указывает язык по умолчанию в mxClient.defaultLanguage.
   mxLoadResources: false, //Указывает, следует ли загружать какие-либо ресурсы.
   mxLoadStylesheets: false //Указывает, следует ли загружать какие-либо таблицы стилей. 
->>>>>>> Stashed changes
 };
 
 const {
@@ -64,8 +55,8 @@ var editor;
 
 // CustomUserObject
 window.CustomUserObject = function(name, type) {
-  this.name = name || "Название";
-  this.type = type || "Коментарий";
+  this.name = name || "Тест # 1";
+  this.type = type || "Коментарий.."; //Закоментировал
 
   this.clone = function() {
     return mxUtils.clone(this);
@@ -138,11 +129,7 @@ export default {
       wrapper.style.justifyContent = "center";
       wrapper.style.border = "2px dashed crimson";
       wrapper.innerHTML =
-<<<<<<< Updated upstream
         '<div>Тестовый обьект</div><div style="color: #8C8C8C">Перетащите на сетку!</div>';
-=======
-        '<div>tom User Object</div><div style="color: #8C8C8C">Drag me to scheme!</div>';
->>>>>>> Stashed changes
       sidebar.appendChild(wrapper);
 
       // Creates the image which is used as the drag icon (preview)
